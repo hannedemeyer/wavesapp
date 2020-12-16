@@ -490,7 +490,8 @@ input::placeholder {
 .c-socials {
     grid-row: 2;
     font-size: 0.75rem;
-    font-family: 400;
+    font-family: inherit;
+    font-weight: 400;
     color: var(--global-color);   
     display: grid;
     justify-content: center;
