@@ -410,26 +410,37 @@ input::placeholder {
 
 .c-container {
     display: grid;
-    grid-template-rows: 6.25rem 41.25rem 6.25rem;
     justify-content: center;
     align-items: center;
 }
 
 .c-main-content {
     display: grid;
-    grid-template-columns: 25rem 25rem;
 }
 
 .c-main-content__text {
     grid-column: 0;
     align-self: center;
     padding-left: 3.125rem;
-    /* background-color: green; */
 }
 
 .c-main-content__mockup {
     grid-column: 0;
     margin-left: 5rem;
+}
+
+@media (min-width: 992px) {
+    .c-container {
+        grid-template-rows: 6.25rem 41.25rem 6.25rem;
+    }
+
+    .c-main-content {
+        grid-template-columns: 25rem 25rem;
+    }
+
+    .c-main-content__text {
+        padding-left: 3.125rem;
+    }
 }
 
 
@@ -481,7 +492,7 @@ input::placeholder {
 }
 
 .c-text__item {
-    line-height: 0.625rem;
+    line-height: 1.25rem;
 }
 
 .c-mockup {
