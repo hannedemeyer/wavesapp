@@ -55,14 +55,15 @@
 html {
     box-sizing: border-box;
     color: var(--global-color);
+    background-color: var(--global-background-color-start);
     font-size: 16px;   /* 1 rem = body font size*/
     line-height: 1.5;
     font-family: 'Work Sans', Helvetica, arial, sans-serif;
     font-feature-settings: "zero" 1;  
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    background-color: var(--global-background-color-start);
+    width: 100%;
+    height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -346,7 +347,7 @@ input::placeholder {
     border: 2px solid var(--global-select-color);
     padding: 0.5rem;
     border-radius: 0.9375rem;
-    background-color: #142A3E;
+    background-color: #333F53;
 }
 
 .c-button--refresh:hover {
@@ -410,13 +411,25 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     font-family: 'Work Sans';
-
+    margin-top: 3rem;
     color: var(--global-text-color);
+}
+
+.c-text--hoogte {
+    color: #EFEFEF;
+    font-weight: 600;
+    font-family: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
     .c-text {
         color: var(--global-color-page);
+    }
+
+    .c-text--hoogte {
+        color: #000000;
+        font-weight: 600;
+        font-family: inherit;
     }
 }
 
