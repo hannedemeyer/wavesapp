@@ -371,13 +371,14 @@ input::placeholder {
 */
 
 .c-button {
-    font-size: 0.75rem;
-    font-weight: 700    ;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: inherit;
     border-radius: 0.9375rem;
     border: 0.0625rem solid var(--global-color-emailinput-hover);
     background-color: #7AA5CB;
     color: #FFFFFF;
-    padding: 0.25rem 0rem;
+    padding: 0.25rem 0.25rem;
     line-height: calc(var(--global-baseline) * 3);
     width: 20%;
     outline: none;
